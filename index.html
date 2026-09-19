@@ -27,9 +27,14 @@ section{padding:120px 0}.sectionline{display:flex;justify-content:space-between;
 footer{display:flex;justify-content:space-between;padding:45px 34px;color:#666;font-size:11px;max-width:1240px;margin:auto}.social{display:flex;gap:22px}.social a:hover{color:#fff}
 @media(max-width:760px){nav{padding:0 18px}.links{display:none}.wrap{padding:0 18px}section{padding:80px 0}.sectionline{display:block}.desc{margin-top:24px}.services{grid-template-columns:1fr}.service:not(:nth-child(3n+1)){border-left:0;padding-left:0}.projects{grid-template-columns:1fr}.project:nth-child(3){grid-column:auto}.contact{margin:0 18px;padding:65px 25px}footer{padding:35px 18px;display:block}.social{margin-top:18px}.hero{padding-bottom:60px}}
 .showreel-project{
+  grid-column:1 / -1;
+  width:100%;
+  aspect-ratio:16 / 9;
+  min-height:0;
   padding:0;
-  min-height:330px;
-  background:#050505;
+  background:#000;
+  position:relative;
+  overflow:hidden;
 }
 
 .showreel-project:before{
@@ -41,7 +46,7 @@ footer{display:flex;justify-content:space-between;padding:45px 34px;color:#666;f
   inset:0;
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
   background:#000;
 }
 
